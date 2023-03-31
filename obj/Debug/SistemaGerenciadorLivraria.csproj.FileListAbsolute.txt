@@ -1,0 +1,12 @@
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\bin\Debug\SistemaGerenciadorLivraria.exe.config
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\bin\Debug\SistemaGerenciadorLivraria.exe
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\bin\Debug\SistemaGerenciadorLivraria.pdb
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.csproj.AssemblyReference.cache
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.csproj.SuggestedBindingRedirects.cache
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.Login.resources
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.Properties.Resources.resources
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.csproj.GenerateResource.cache
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.csproj.CoreCompileInputs.cache
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.exe
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.pdb
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.FrmMenu.resources
