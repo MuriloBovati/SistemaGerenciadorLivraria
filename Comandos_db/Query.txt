@@ -2,8 +2,8 @@ CREATE DATABASE db_Livraria;
 
 CREATE TABLE tbl_Atendente
 (	
-	cd_Atendente INT PRIMARY KEY IDENTITY,
-	ds_Login VARCHAR(20),
-	ds_Senha CHAR(8),
-	nm_Atendente VARCHAR(60)
+	cd_Atendente INT PRIMARY KEY IDENTITY NOT NULL,
+	ds_Login VARCHAR(20) NOT NULL,
+	ds_Senha CHAR(8) NOT NULL,
+	nm_Atendente VARCHAR(60) NOT NULL
 );
