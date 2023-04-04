@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\DBController.cs" />
+    <Compile Include="FrmFuncionario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmFuncionario.Designer.cs">
+      <DependentUpon>FrmFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmFuncionario.resx">
+      <DependentUpon>FrmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +107,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-esqueci-a-senha-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-pixel-6-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-livro-aberto-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-livro-aberto-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-categoria-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-caneta-esferográfica-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-grupos-de-usuários-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-nota-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-carrinho-de-compras-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-application-form-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

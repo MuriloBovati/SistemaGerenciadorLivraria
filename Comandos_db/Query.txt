@@ -7,3 +7,27 @@ CREATE TABLE tbl_Atendente
 	ds_Senha CHAR(8) NOT NULL,
 	nm_Atendente VARCHAR(60) NOT NULL
 );
+
+INSERT INTO tbl_Atendente
+(ds_Login, ds_Senha, nm_Atendente)
+VALUES
+('LOGIN', 'SENHA', 'NOME');
+_____________________________________________________________________________________________________________
+
+//Mechendo com tbl_Cliente
+
+CREATE TABLE tbl_Cliente
+(
+	cd_Cliente INT PRIMARY KEY IDENTITY NOT NULL,
+	nm_Cliente VARCHAR(60) NOT NULL,
+	ds_Email VARCHAR(60) NOT NULL,
+	no_CPF CHAR(11) NULL,
+	no_CNPJ CHAR(14) NULL,
+	nm_Logradouro VARCHAR(60) NOT NULL,
+	no_Logradouro VARCHAR(5) NOT NULL,
+	ds_Complemento VARCHAR(20) NULL,
+	nm_Bairro VARCHAR(20) NOT NULL,
+	nm_Cidade VARCHAR(20) NOT NULL,
+	sg_UF CHAR(2) NOT NULL,
+	no_CEP CHAR(8) NOT NULL
+);

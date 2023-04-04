@@ -63,6 +63,46 @@ namespace SistemaGerenciadorLivraria.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_application_form_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-application-form-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_caneta_esferográfica_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-caneta-esferográfica-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_carrinho_de_compras_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-carrinho-de-compras-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_categoria_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-categoria-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_esqueci_a_senha_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-esqueci-a-senha-96", resourceCulture);
@@ -73,9 +113,69 @@ namespace SistemaGerenciadorLivraria.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_google_pixel_6_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-google-pixel-6-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_grupos_de_usuários_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-grupos-de-usuários-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_livro_aberto_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-livro-aberto-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_livro_aberto_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-livro-aberto-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_livro_aberto_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-livro-aberto-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_nota_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-nota-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_usuário_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-usuário-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

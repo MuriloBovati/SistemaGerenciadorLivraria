@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.pnMenu = new System.Windows.Forms.Panel();
+            this.pnLogo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnCaixa = new System.Windows.Forms.Button();
             this.btnPedido = new System.Windows.Forms.Button();
             this.btnAutores = new System.Windows.Forms.Button();
@@ -38,9 +40,9 @@
             this.btnFone = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
             this.btnFunc = new System.Windows.Forms.Button();
-            this.pnLogo = new System.Windows.Forms.Panel();
-            this.btnCloseMenu = new System.Windows.Forms.Button();
+            this.frmFuncionario1 = new SistemaGerenciadorLivraria.FrmFuncionario();
             this.pnMenu.SuspendLayout();
+            this.pnLogo.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnMenu
@@ -62,6 +64,27 @@
             this.pnMenu.Size = new System.Drawing.Size(220, 691);
             this.pnMenu.TabIndex = 0;
             // 
+            // pnLogo
+            // 
+            this.pnLogo.BackColor = System.Drawing.SystemColors.Desktop;
+            this.pnLogo.Controls.Add(this.label1);
+            this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnLogo.Name = "pnLogo";
+            this.pnLogo.Size = new System.Drawing.Size(220, 100);
+            this.pnLogo.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(3, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Livraria Mumuzin";
+            // 
             // btnCaixa
             // 
             this.btnCaixa.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -70,6 +93,8 @@
             this.btnCaixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCaixa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaixa.ForeColor = System.Drawing.Color.White;
+            this.btnCaixa.Image = global::SistemaGerenciadorLivraria.Properties.Resources.icons8_carrinho_de_compras_48;
+            this.btnCaixa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCaixa.Location = new System.Drawing.Point(0, 500);
             this.btnCaixa.Name = "btnCaixa";
             this.btnCaixa.Size = new System.Drawing.Size(220, 50);
@@ -85,6 +110,8 @@
             this.btnPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPedido.ForeColor = System.Drawing.Color.White;
+            this.btnPedido.Image = global::SistemaGerenciadorLivraria.Properties.Resources.icons8_nota_48;
+            this.btnPedido.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPedido.Location = new System.Drawing.Point(0, 450);
             this.btnPedido.Name = "btnPedido";
             this.btnPedido.Size = new System.Drawing.Size(220, 50);
@@ -100,6 +127,8 @@
             this.btnAutores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAutores.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAutores.ForeColor = System.Drawing.Color.White;
+            this.btnAutores.Image = global::SistemaGerenciadorLivraria.Properties.Resources.icons8_grupos_de_usuários_48;
+            this.btnAutores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAutores.Location = new System.Drawing.Point(0, 400);
             this.btnAutores.Name = "btnAutores";
             this.btnAutores.Size = new System.Drawing.Size(220, 50);
@@ -115,6 +144,8 @@
             this.btnEditora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditora.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditora.ForeColor = System.Drawing.Color.White;
+            this.btnEditora.Image = global::SistemaGerenciadorLivraria.Properties.Resources.icons8_caneta_esferográfica_48;
+            this.btnEditora.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditora.Location = new System.Drawing.Point(0, 350);
             this.btnEditora.Name = "btnEditora";
             this.btnEditora.Size = new System.Drawing.Size(220, 50);
@@ -130,6 +161,8 @@
             this.btnCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategoria.ForeColor = System.Drawing.Color.White;
+            this.btnCategoria.Image = global::SistemaGerenciadorLivraria.Properties.Resources.icons8_categoria_48;
+            this.btnCategoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCategoria.Location = new System.Drawing.Point(0, 300);
             this.btnCategoria.Name = "btnCategoria";
             this.btnCategoria.Size = new System.Drawing.Size(220, 50);
@@ -145,6 +178,8 @@
             this.btnLivro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLivro.ForeColor = System.Drawing.Color.White;
+            this.btnLivro.Image = global::SistemaGerenciadorLivraria.Properties.Resources.icons8_livro_aberto_48;
+            this.btnLivro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLivro.Location = new System.Drawing.Point(0, 250);
             this.btnLivro.Name = "btnLivro";
             this.btnLivro.Size = new System.Drawing.Size(220, 50);
@@ -160,6 +195,8 @@
             this.btnFone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFone.ForeColor = System.Drawing.Color.White;
+            this.btnFone.Image = global::SistemaGerenciadorLivraria.Properties.Resources.icons8_google_pixel_6_48;
+            this.btnFone.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFone.Location = new System.Drawing.Point(0, 200);
             this.btnFone.Name = "btnFone";
             this.btnFone.Size = new System.Drawing.Size(220, 50);
@@ -175,6 +212,8 @@
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.ForeColor = System.Drawing.Color.White;
+            this.btnCliente.Image = global::SistemaGerenciadorLivraria.Properties.Resources.icons8_usuário_48;
+            this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCliente.Location = new System.Drawing.Point(0, 150);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(220, 50);
@@ -190,6 +229,8 @@
             this.btnFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFunc.ForeColor = System.Drawing.Color.White;
+            this.btnFunc.Image = global::SistemaGerenciadorLivraria.Properties.Resources.icons8_usuário_90;
+            this.btnFunc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFunc.Location = new System.Drawing.Point(0, 100);
             this.btnFunc.Name = "btnFunc";
             this.btnFunc.Size = new System.Drawing.Size(220, 50);
@@ -197,27 +238,12 @@
             this.btnFunc.Text = "Funcionario";
             this.btnFunc.UseVisualStyleBackColor = false;
             // 
-            // pnLogo
+            // frmFuncionario1
             // 
-            this.pnLogo.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnLogo.Name = "pnLogo";
-            this.pnLogo.Size = new System.Drawing.Size(220, 100);
-            this.pnLogo.TabIndex = 0;
-            // 
-            // btnCloseMenu
-            // 
-            this.btnCloseMenu.FlatAppearance.BorderSize = 0;
-            this.btnCloseMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseMenu.Location = new System.Drawing.Point(1154, 0);
-            this.btnCloseMenu.Name = "btnCloseMenu";
-            this.btnCloseMenu.Size = new System.Drawing.Size(35, 35);
-            this.btnCloseMenu.TabIndex = 1;
-            this.btnCloseMenu.Text = "X";
-            this.btnCloseMenu.UseVisualStyleBackColor = true;
-            this.btnCloseMenu.Click += new System.EventHandler(this.btnCloseMenu_Click);
+            this.frmFuncionario1.Location = new System.Drawing.Point(218, 0);
+            this.frmFuncionario1.Name = "frmFuncionario1";
+            this.frmFuncionario1.Size = new System.Drawing.Size(971, 691);
+            this.frmFuncionario1.TabIndex = 2;
             // 
             // FrmMenu
             // 
@@ -225,13 +251,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1189, 691);
-            this.Controls.Add(this.btnCloseMenu);
+            this.Controls.Add(this.frmFuncionario1);
             this.Controls.Add(this.pnMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMenu";
             this.pnMenu.ResumeLayout(false);
+            this.pnLogo.ResumeLayout(false);
+            this.pnLogo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -249,6 +277,7 @@
         private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.Button btnFunc;
         private System.Windows.Forms.Panel pnLogo;
-        private System.Windows.Forms.Button btnCloseMenu;
+        private System.Windows.Forms.Label label1;
+        private FrmFuncionario frmFuncionario1;
     }
 }

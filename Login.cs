@@ -27,7 +27,6 @@ namespace SistemaGerenciadorLivraria
 
         private void buttonLock_MouseDown(object sender, MouseEventArgs e)
         {
-
             if (inputPassword.UseSystemPasswordChar)
             {
                 inputPassword.UseSystemPasswordChar = false;
@@ -36,8 +35,6 @@ namespace SistemaGerenciadorLivraria
             {
                 inputPassword.UseSystemPasswordChar = true;
             }
-
-
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -58,6 +55,11 @@ namespace SistemaGerenciadorLivraria
                 }
             }
 
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            inputUsername.Focus();
         }
     }
 }
