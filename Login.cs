@@ -20,6 +20,26 @@ namespace SistemaGerenciadorLivraria
             InitializeComponent();
         }
 
+        private void loginTest()
+        {
+            if (inputUsername.Text == "" || inputPassword.Text == "")
+            {
+                MessageBox.Show("Username and password required to login", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                inputPassword.Clear();
+                inputPassword.Focus();
+            }
+            else
+            {
+                DBController database = new DBController();
+                if (database.checkLogin(inputUsername.Text, inputPassword.Text))
+                {
+                    FrmMenu menu = new FrmMenu();
+                    menu.Show();
+                    this.Visible = false;
+                }
+            }
+        }
+
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -37,29 +57,16 @@ namespace SistemaGerenciadorLivraria
             }
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            if (inputUsername.Text == "" || inputPassword.Text == "")
-            {
-                MessageBox.Show("Username and password required to login", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                inputPassword.Clear();
-                inputPassword.Focus();
-            }
-            else
-            {
-                DBController database = new DBController();
-                if (database.checkLogin(inputUsername.Text, inputPassword.Text))
-                {
-                    FrmMenu menu = new FrmMenu();
-                    menu.Show();
-                }
-            }
+        private void btnLogin_Click(object sender, EventArgs e) { loginTest(); }
 
+        private void inputPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter) { loginTest(); }
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void inputUsername_KeyDown(object sender, KeyEventArgs e)
         {
-            inputUsername.Focus();
+            if(e.KeyCode == Keys.Enter) { loginTest(); }
         }
     }
 }

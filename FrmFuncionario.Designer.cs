@@ -37,16 +37,16 @@
             this.lblCodeInfo = new System.Windows.Forms.Label();
             this.inputPassword = new System.Windows.Forms.TextBox();
             this.inputLogin = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridSql = new System.Windows.Forms.DataGridView();
             this.inputNome = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnExclude = new System.Windows.Forms.Button();
             this.btnModify = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.btnCloseApp = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridSql)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +85,7 @@
             // 
             this.lbl_Nome.AutoSize = true;
             this.lbl_Nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Nome.Location = new System.Drawing.Point(89, 272);
+            this.lbl_Nome.Location = new System.Drawing.Point(89, 122);
             this.lbl_Nome.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.lbl_Nome.Name = "lbl_Nome";
             this.lbl_Nome.Size = new System.Drawing.Size(79, 25);
@@ -96,7 +96,7 @@
             // 
             this.lbl_Senha.AutoSize = true;
             this.lbl_Senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Senha.Location = new System.Drawing.Point(89, 197);
+            this.lbl_Senha.Location = new System.Drawing.Point(89, 272);
             this.lbl_Senha.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.lbl_Senha.Name = "lbl_Senha";
             this.lbl_Senha.Size = new System.Drawing.Size(86, 25);
@@ -107,7 +107,7 @@
             // 
             this.lbl_Login.AutoSize = true;
             this.lbl_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Login.Location = new System.Drawing.Point(89, 122);
+            this.lbl_Login.Location = new System.Drawing.Point(89, 197);
             this.lbl_Login.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.lbl_Login.Name = "lbl_Login";
             this.lbl_Login.Size = new System.Drawing.Size(100, 25);
@@ -128,7 +128,7 @@
             // inputPassword
             // 
             this.inputPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputPassword.Location = new System.Drawing.Point(94, 225);
+            this.inputPassword.Location = new System.Drawing.Point(94, 300);
             this.inputPassword.MaxLength = 8;
             this.inputPassword.Name = "inputPassword";
             this.inputPassword.Size = new System.Drawing.Size(559, 29);
@@ -137,42 +137,47 @@
             // inputLogin
             // 
             this.inputLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputLogin.Location = new System.Drawing.Point(94, 150);
+            this.inputLogin.Location = new System.Drawing.Point(94, 225);
             this.inputLogin.MaxLength = 20;
             this.inputLogin.Name = "inputLogin";
             this.inputLogin.Size = new System.Drawing.Size(559, 29);
             this.inputLogin.TabIndex = 10;
             // 
-            // dataGridView2
+            // dataGridSql
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(17, 447);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(934, 224);
-            this.dataGridView2.TabIndex = 12;
+            this.dataGridSql.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridSql.Location = new System.Drawing.Point(17, 447);
+            this.dataGridSql.MultiSelect = false;
+            this.dataGridSql.Name = "dataGridSql";
+            this.dataGridSql.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridSql.Size = new System.Drawing.Size(934, 224);
+            this.dataGridSql.TabIndex = 12;
+            this.dataGridSql.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridSql_MouseDoubleClick);
             // 
             // inputNome
             // 
             this.inputNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputNome.Location = new System.Drawing.Point(94, 300);
+            this.inputNome.Location = new System.Drawing.Point(94, 150);
             this.inputNome.MaxLength = 60;
             this.inputNome.Name = "inputNome";
             this.inputNome.Size = new System.Drawing.Size(559, 29);
             this.inputNome.TabIndex = 13;
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(94, 412);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(559, 29);
-            this.textBox1.TabIndex = 14;
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(94, 412);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(559, 29);
+            this.txtSearch.TabIndex = 14;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSave.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.Location = new System.Drawing.Point(831, 288);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 10, 20, 3);
             this.btnSave.Name = "btnSave";
@@ -184,9 +189,10 @@
             // 
             // btnExclude
             // 
-            this.btnExclude.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnExclude.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnExclude.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExclude.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExclude.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnExclude.Location = new System.Drawing.Point(831, 371);
             this.btnExclude.Margin = new System.Windows.Forms.Padding(3, 10, 20, 3);
             this.btnExclude.Name = "btnExclude";
@@ -194,12 +200,14 @@
             this.btnExclude.TabIndex = 17;
             this.btnExclude.Text = "Excluir";
             this.btnExclude.UseVisualStyleBackColor = false;
+            this.btnExclude.Click += new System.EventHandler(this.btnExclude_Click);
             // 
             // btnModify
             // 
-            this.btnModify.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnModify.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModify.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModify.Location = new System.Drawing.Point(688, 371);
             this.btnModify.Margin = new System.Windows.Forms.Padding(3, 10, 20, 3);
             this.btnModify.Name = "btnModify";
@@ -207,13 +215,14 @@
             this.btnModify.TabIndex = 18;
             this.btnModify.Text = "Alterar";
             this.btnModify.UseVisualStyleBackColor = false;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnNew
             // 
-            this.btnNew.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnNew.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnNew.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNew.Location = new System.Drawing.Point(688, 288);
             this.btnNew.Margin = new System.Windows.Forms.Padding(3, 10, 20, 3);
@@ -244,6 +253,7 @@
             this.btnCancel.BackColor = System.Drawing.Color.IndianRed;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancel.Location = new System.Drawing.Point(831, 205);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 10, 20, 3);
             this.btnCancel.Name = "btnCancel";
@@ -263,9 +273,9 @@
             this.Controls.Add(this.btnExclude);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.inputNome);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridSql);
             this.Controls.Add(this.inputLogin);
             this.Controls.Add(this.inputPassword);
             this.Controls.Add(this.lblCodeInfo);
@@ -277,7 +287,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmFuncionario";
             this.Size = new System.Drawing.Size(971, 691);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridSql)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,9 +304,9 @@
         private System.Windows.Forms.Label lblCodeInfo;
         private System.Windows.Forms.TextBox inputPassword;
         private System.Windows.Forms.TextBox inputLogin;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridSql;
         private System.Windows.Forms.TextBox inputNome;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnExclude;

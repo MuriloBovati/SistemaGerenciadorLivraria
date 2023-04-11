@@ -11,3 +11,4 @@ C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academ
 C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.pdb
 C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.FrmMenu.resources
 C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.FrmFuncionario.resources
+C:\Users\Muril\OneDrive\Área de Trabalho\Projetos em produção\Projetos academicos\SistemaGerenciadorLivraria\obj\Debug\SistemaGerenciadorLivraria.FrmClientes.resources

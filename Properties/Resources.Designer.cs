@@ -73,6 +73,16 @@ namespace SistemaGerenciadorLivraria.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_botão_desligar_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-botão-desligar-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_caneta_esferográfica_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-caneta-esferográfica-48", resourceCulture);

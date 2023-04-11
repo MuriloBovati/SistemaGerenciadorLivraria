@@ -31,3 +31,13 @@ CREATE TABLE tbl_Cliente
 	sg_UF CHAR(2) NOT NULL,
 	no_CEP CHAR(8) NOT NULL
 );
+
+______________________________________________________________________________________________________________
+//TABELA telefone
+
+CREATE TABLE tbl_Telefone
+(
+	cd_Cliente INT,
+	no_telefone CHAR(11) PRIMARY KEY NOT NULL,
+	CONSTRAINT fk_Telefone FOREIGN KEY (cd_Cliente) REFERENCES tbl_Cliente(cd_Cliente) 
+);

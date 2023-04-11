@@ -21,5 +21,20 @@ namespace SistemaGerenciadorLivraria
         {
             Application.Exit();
         }
+
+        private void btnFunc_Click(object sender, EventArgs e)
+        {
+            frmFuncionario1.Visible = true;
+        }
+
+        private void btnLogoff_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja sair do sistema ?", "Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Question).ToString() == "OK")
+            {
+                this.Visible = false;
+                Login login = new Login();
+                login.Show();
+            }
+        }
     }
 }

@@ -195,6 +195,7 @@
             this.inputPassword.Size = new System.Drawing.Size(390, 28);
             this.inputPassword.TabIndex = 8;
             this.inputPassword.UseSystemPasswordChar = true;
+            this.inputPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.inputPassword_KeyDown);
             // 
             // buttonLock
             // 
@@ -237,6 +238,7 @@
             this.inputUsername.Name = "inputUsername";
             this.inputUsername.Size = new System.Drawing.Size(390, 28);
             this.inputUsername.TabIndex = 7;
+            this.inputUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.inputUsername_KeyDown);
             // 
             // pictureBox2
             // 
@@ -287,7 +289,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

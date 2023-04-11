@@ -31,6 +31,7 @@
             this.pnMenu = new System.Windows.Forms.Panel();
             this.pnLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLogoff = new System.Windows.Forms.Button();
             this.btnCaixa = new System.Windows.Forms.Button();
             this.btnPedido = new System.Windows.Forms.Button();
             this.btnAutores = new System.Windows.Forms.Button();
@@ -48,6 +49,7 @@
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.pnMenu.Controls.Add(this.btnLogoff);
             this.pnMenu.Controls.Add(this.btnCaixa);
             this.pnMenu.Controls.Add(this.btnPedido);
             this.pnMenu.Controls.Add(this.btnAutores);
@@ -84,6 +86,24 @@
             this.label1.Size = new System.Drawing.Size(209, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Livraria Mumuzin";
+            // 
+            // btnLogoff
+            // 
+            this.btnLogoff.BackColor = System.Drawing.Color.IndianRed;
+            this.btnLogoff.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogoff.FlatAppearance.BorderSize = 0;
+            this.btnLogoff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogoff.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogoff.ForeColor = System.Drawing.Color.White;
+            this.btnLogoff.Image = global::SistemaGerenciadorLivraria.Properties.Resources.icons8_botão_desligar_48;
+            this.btnLogoff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogoff.Location = new System.Drawing.Point(0, 550);
+            this.btnLogoff.Name = "btnLogoff";
+            this.btnLogoff.Size = new System.Drawing.Size(220, 50);
+            this.btnLogoff.TabIndex = 10;
+            this.btnLogoff.Text = "Sair";
+            this.btnLogoff.UseVisualStyleBackColor = false;
+            this.btnLogoff.Click += new System.EventHandler(this.btnLogoff_Click);
             // 
             // btnCaixa
             // 
@@ -237,6 +257,7 @@
             this.btnFunc.TabIndex = 1;
             this.btnFunc.Text = "Funcionario";
             this.btnFunc.UseVisualStyleBackColor = false;
+            this.btnFunc.Click += new System.EventHandler(this.btnFunc_Click);
             // 
             // frmFuncionario1
             // 
@@ -279,5 +300,6 @@
         private System.Windows.Forms.Panel pnLogo;
         private System.Windows.Forms.Label label1;
         private FrmFuncionario frmFuncionario1;
+        private System.Windows.Forms.Button btnLogoff;
     }
 }

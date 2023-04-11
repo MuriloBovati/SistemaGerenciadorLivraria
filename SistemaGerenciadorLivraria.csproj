@@ -47,6 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\DBController.cs" />
+    <Compile Include="Components\Funcionario.cs" />
+    <Compile Include="FrmClientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFuncionario.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -67,6 +74,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFuncionario.resx">
       <DependentUpon>FrmFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +147,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-application-form-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-botão-desligar-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
